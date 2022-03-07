@@ -1,0 +1,10 @@
+https://pandoc.org/MANUAL.html#epubs
+
+---
+title: 
+subtitle: 
+author: 
+publisher: 
+description: 
+cover-image: cover.jpg
+---

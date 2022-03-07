@@ -1,0 +1,133 @@
+<Table>
+<Row><Cell>ui_nh_add_alchemy</Cell><Cell>Alchemy Bench</Cell><Cell>炼金台</Cell></Row>
+<Row><Cell>ui_nh_add_altar</Cell><Cell>Altar</Cell><Cell>神坛</Cell></Row>
+<Row><Cell>ui_nh_add_archery_range</Cell><Cell>Archery Range</Cell><Cell>射箭场</Cell></Row>
+<Row><Cell>ui_nh_add_armorsmith</Cell><Cell>Armoursmith's Tools</Cell><Cell>盔甲匠的工具</Cell></Row>
+<Row><Cell>ui_nh_add_brewery</Cell><Cell>Brewery</Cell><Cell>酿酒厂</Cell></Row>
+<Row><Cell>ui_nh_add_dryfood</Cell><Cell>Drying Shed</Cell><Cell>烘干房</Cell></Row>
+<Row><Cell>ui_nh_add_gamblers</Cell><Cell>Dice Games</Cell><Cell>骰子游戏</Cell></Row>
+<Row><Cell>ui_nh_add_garden</Cell><Cell>Herb Garden</Cell><Cell>草药花园</Cell></Row>
+<Row><Cell>ui_nh_add_painting</Cell><Cell>Frescoes</Cell><Cell>壁画</Cell></Row>
+<Row><Cell>ui_nh_add_saddles</Cell><Cell>Saddler's Equipment</Cell><Cell>鞍匠的装备</Cell></Row>
+<Row><Cell>ui_nh_add_smokehouse</Cell><Cell>Smoke House</Cell><Cell>烟熏房</Cell></Row>
+<Row><Cell>ui_nh_add_weaponsmith</Cell><Cell>Swordsmith's Tools</Cell><Cell>武器匠的工具</Cell></Row>
+<Row><Cell>ui_nh_eff_pro_apiary_baker</Cell><Cell>Honey for baker</Cell><Cell>给面包师的蜂蜜</Cell></Row>
+<Row><Cell>ui_nh_eff_pro_apiary_pub</Cell><Cell>Honey for tavern</Cell><Cell>给酒馆的蜂蜜</Cell></Row>
+<Row><Cell>ui_nh_eff_pro_baker_pub</Cell><Cell>Cakes for tavern</Cell><Cell>给酒馆的蛋糕</Cell></Row>
+<Row><Cell>ui_nh_eff_pro_blacksmith_garrison</Cell><Cell>Weapons for garrison</Cell><Cell>给卫兵的武器</Cell></Row>
+<Row><Cell>ui_nh_eff_pro_blacksmith_stables</Cell><Cell>Horseshoes for stables</Cell><Cell>给马厩的马蹄铁</Cell></Row>
+<Row><Cell>ui_nh_eff_pro_butcher_pub</Cell><Cell>Meat for tavern</Cell><Cell>给酒馆的肉</Cell></Row>
+<Row><Cell>ui_nh_eff_pro_garrison_pub</Cell><Cell>Tavern customers</Cell><Cell>酒馆顾客</Cell></Row>
+<Row><Cell>ui_nh_eff_pro_stables_merchant</Cell><Cell>Horses for merchant</Cell><Cell>给商人的马匹</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_adam</Cell><Cell>Innkeeper Adam</Cell><Cell>酒馆掌柜亚当</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_alchemy</Cell><Cell>Alchemists' bench</Cell><Cell>炼金台</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_altar</Cell><Cell>Altar</Cell><Cell>神坛</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_apiary_baker</Cell><Cell>Honey cakes</Cell><Cell>亨利的蛋糕</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_apiary_pub</Cell><Cell>Mead</Cell><Cell>蜜酒</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_archeryRange</Cell><Cell>Archery range</Cell><Cell>箭靶</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_armorsmith</Cell><Cell>Armoursmith's equipment</Cell><Cell>盔甲匠的设备</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_baker_bigBread</Cell><Cell>Full stomachs</Cell><Cell>撑着的胃</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_baker_blackBread</Cell><Cell>Black bread</Cell><Cell>黑面包</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_baker_pub</Cell><Cell>Excellent cakes</Cell><Cell>精美蛋糕</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_baker_scale</Cell><Cell>Municipal scales</Cell><Cell>市政规模</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_blacksmith_garrison</Cell><Cell>Weapons from forge</Cell><Cell>来自铁匠铺的武器</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_blacksmith_stables</Cell><Cell>Horseshoes from forge</Cell><Cell>来自铁匠铺的马蹄铁</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_bread_hungry</Cell><Cell>Hungry village</Cell><Cell>饥饿的村子</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_brewery</Cell><Cell>Brewery</Cell><Cell>酿酒厂</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_butcher_pub</Cell><Cell>Meat banquet</Cell><Cell>大肉盛宴</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_coal</Cell><Cell>Charcoal </Cell><Cell>煤炭</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_coal_ginger</Cell><Cell>Charcoal from Ginger's friends</Cell><Cell>来自金杰发朋友们的煤炭</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_dryfood</Cell><Cell>Drying shed</Cell><Cell>烘干房</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_excrement_anywhere</Cell><Cell>Stinking stream</Cell><Cell>发臭的小溪</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_excrement_compromise</Cell><Cell>Fairly clean stream</Cell><Cell>相当干净的小溪</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_excrement_far</Cell><Cell>Clean stream</Cell><Cell>干净的小溪</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_export_wood</Cell><Cell>Selling wood </Cell><Cell>售卖木材</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_fricek</Cell><Cell>Fritz</Cell><Cell>弗利兹</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_friends_fricekProductive</Cell><Cell>Fritz is peaceful</Cell><Cell>弗利兹很宁静</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_friends_matusProductive</Cell><Cell>Matthew works a bit</Cell><Cell>马修工作了一点点</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_gamblers</Cell><Cell>Dice games</Cell><Cell>骰子游戏</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_garden</Cell><Cell>Herb garden</Cell><Cell>草药花园</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_garrison_pub</Cell><Cell>Thirsty soldiers</Cell><Cell>口渴的士兵</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_grain_auschitz</Cell><Cell>Grain from Uzhitz</Cell><Cell>来自乌兹茨的谷物</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_grain_confiscate</Cell><Cell>Disgruntled labourers</Cell><Cell>不满的工人</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_grain_samopesh</Cell><Cell>Grain from Samopesh</Cell><Cell>来自萨莫培什的谷物</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_grain_sasau</Cell><Cell>Grain from Sasau</Cell><Cell>来自莎邵的谷物</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_krkovicka</Cell><Cell>Butcher Kochwurst</Cell><Cell>屠夫乡常</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_krojchanzl</Cell><Cell>Merchant Kornelius</Cell><Cell>商人科涅留斯</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_kunes</Cell><Cell>Woodcutter Kunesh</Cell><Cell>伐木工库尼什</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_malina</Cell><Cell>Woodcutter Raspberry</Cell><Cell>伐木工红梅</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_malina_banish</Cell><Cell>Raspberry is free</Cell><Cell>红梅自由了</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_malina_payoff</Cell><Cell>Dowry paid</Cell><Cell>付了的嫁妆</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_marek</Cell><Cell>Groom Mark</Cell><Cell>马夫马克</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_matus</Cell><Cell>Matthew</Cell><Cell>马修</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_meat_ledecko</Cell><Cell>Livestock from Ledetchko</Cell><Cell>来自拉迪亚茨克的牲畜</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_meat_rataje</Cell><Cell>Livestock from Rattay</Cell><Cell>来自拉泰的牲畜</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_meat_sazava</Cell><Cell>Livestock from Sasau</Cell><Cell>来自莎邵的牲畜</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_mirka</Cell><Cell>Tavern maid Mirka</Cell><Cell>酒馆侍女米尔卡</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_ota</Cell><Cell>Armoursmith Ota</Cell><Cell>盔甲匠奥塔</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_oxen</Cell><Cell>Beasts of burden</Cell><Cell>驼兽</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_painting</Cell><Cell>Frescoes</Cell><Cell>壁画</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_petr</Cell><Cell>Baker Silvester</Cell><Cell>面包师西维尔斯特</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_poachers_confiscate</Cell><Cell>Poaching ban</Cell><Cell>偷猎禁令</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_poachers_denounce</Cell><Cell>Tough punishments</Cell><Cell>强硬的惩罚</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_poachers_keep</Cell><Cell>Poachers' paradise</Cell><Cell>偷猎者天堂</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_prachos_banishWife</Cell><Cell>Harridan banished</Cell><Cell>被放逐的泼妇</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_prachos_punishHusband</Cell><Cell>Malis must be sober</Cell><Cell>马里斯必须要清醒</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_reinf_lumberjacks</Cell><Cell>Woodcutter soldiers</Cell><Cell>伐木工士兵</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_reinf_none</Cell><Cell>No sentries</Cell><Cell>没有哨兵</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_reinf_varlets</Cell><Cell>Labourer soldiers</Cell><Cell>工人士兵</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_saddles</Cell><Cell>Saddler's equipment</Cell><Cell>鞍匠的设备</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_salary_high</Cell><Cell>Overpaid Locator</Cell><Cell>超额付工资的测定师</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_salary_low</Cell><Cell>Underpaid Locator</Cell><Cell>没付工资的测定师</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_salary_medium</Cell><Cell>Locator's wages</Cell><Cell>测定师的工资</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_smokehouse</Cell><Cell>Smoke house</Cell><Cell>烟熏房</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_spejlik</Cell><Cell>Butcher Brisket</Cell><Cell>屠夫兄浦</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_stables_merchant</Cell><Cell>Cart horses</Cell><Cell>拉车的马</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_stone_talmberk</Cell><Cell>Stone from Talmberg</Cell><Cell>来自塔尔木堡的石材</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_vasek</Cell><Cell>Groom Vashek</Cell><Cell>马夫瓦舍克</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_weaponsmith</Cell><Cell>Swordsmith's equipment</Cell><Cell>武器匠的设备</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_witch_banish</Cell><Cell>Firm faith</Cell><Cell>公司的命运</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_witch_protect</Cell><Cell>Village herbalist</Cell><Cell>村里的草药师</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_wood_banish</Cell><Cell>Woodcutters banished</Cell><Cell>被放逐的伐木工</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_zach</Cell><Cell>Armoursmith Zach</Cell><Cell>盔甲匠扎克</Cell></Row>
+<Row><Cell>ui_nh_eff_rec_zvest</Cell><Cell>Swordsmith Fink</Cell><Cell>武器匠芬克</Cell></Row>
+<Row><Cell>ui_nh_objective_church</Cell><Cell>Church repairs</Cell><Cell>教堂修复</Cell></Row>
+<Row><Cell>ui_nh_objective_income</Cell><Cell>Village income</Cell><Cell>村庄收入</Cell></Row>
+<Row><Cell>ui_nh_objective_people</Cell><Cell>Village capacity</Cell><Cell>村庄容量</Cell></Row>
+<Row><Cell>ui_nh_res_coal</Cell><Cell>Charcoal</Cell><Cell>煤炭</Cell></Row>
+<Row><Cell>ui_nh_res_grain</Cell><Cell>Grain</Cell><Cell>谷物</Cell></Row>
+<Row><Cell>ui_nh_res_meat</Cell><Cell>Livestock</Cell><Cell>牲畜</Cell></Row>
+<Row><Cell>ui_nh_res_stone</Cell><Cell>Stone</Cell><Cell>石材</Cell></Row>
+<Row><Cell>ui_nh_structure_desc_apiary1</Cell><Cell>Beehives demand little labour, but are well worth having. Forest honey is healthy, tasty and can be used to improve many dishes.</Cell><Cell>蜂箱很好运营，但值得拥有。林产蜂蜜健康、美味，能够用来改善饮食。</Cell></Row>
+<Row><Cell>ui_nh_structure_desc_baker1</Cell><Cell>Bread is the main staple of the common folk, but the baker also bakes other goods that add variety to the everyday diet.</Cell><Cell>人是铁，面包是钢，但面包师也烹饪其他的食物以满足百姓的胃口。</Cell></Row>
+<Row><Cell>ui_nh_structure_desc_blacksmith1</Cell><Cell>A decent settlement must have a blacksmith who will fashion tools, nails, horseshoes and, in times of need, requisites for men-at-arms. With the necessary equipment, he can double either as a swordsmith or an armoursmith.                                    </Cell><Cell>一个像样的居住地里必须有一个铁匠，他的工作将造福所有居民。他得打造工具、钉子、马蹄铁，甚至在需要的时候改良武器。当有必要的装备后，他可以变成武器匠或是盔甲匠。</Cell></Row>
+<Row><Cell>ui_nh_structure_desc_bridge1</Cell><Cell>A stone bridge that will stand up to the comings and goings of all the locals and wagons carrying goods in and out, and one that will not disgrace the village.</Cell><Cell>一座经得起百姓走，马车压，并且美观大方的石桥。</Cell></Row>
+<Row><Cell>ui_nh_structure_desc_butcher1</Cell><Cell>It is the task of the butcher to slaughter livestock and provide the village with meat, naturally only from domesticated animals, since poaching in the nobles' forests is a serious crime.</Cell><Cell>屠夫的职责乃是宰杀牲口，为全村提供肉制品。牲口自然全是自家圈养的，在贵族的林子里偷猎是一大重罪。</Cell></Row>
+<Row><Cell>ui_nh_structure_desc_camp1</Cell><Cell>A camp for labourers engaged in all sorts of tasks. Many of them are refugees from Skalitz, but there are also some who heard of Pribyslavitz by chance and came to seek their fortune.</Cell><Cell>一座承担各种工作的工人的营地。很多人是斯卡里茨的难民，但也有很多偶然听说到普拉比西拉维奇前来谋生的百姓。</Cell></Row>
+<Row><Cell>ui_nh_structure_desc_garrison1</Cell><Cell>In times of peace, the guardhouse is home to the forces of law and order. In times of war, it serves as the town armoury and military barracks. Naturally, it also has a combat arena where the men can train.</Cell><Cell>在和平时期，守卫室是维持治安的警力中枢。在战争时期，它也是村镇的军火库与军营。自然而然的，这里也会有个竞技场供人们训练。</Cell></Row>
+<Row><Cell>ui_nh_structure_desc_church1</Cell><Cell>Essential repairs to the church should begin with fixing the roof to protect the building from the rain and prevent further decay.</Cell><Cell>教堂重建工作的核心应从修缮房顶以保护建筑免受雨水泛滥之灾开始。</Cell></Row>
+<Row><Cell>ui_nh_structure_desc_church2</Cell><Cell>The beautiful repaired church is the pride of the whole settlement.</Cell><Cell>焕然一新的华丽教堂成为了整个村庄的骄傲。</Cell></Row>
+<Row><Cell>ui_nh_structure_desc_lumberjacks1</Cell><Cell>Woodcutters fell and process the trees in the surrounding woods, ensuring a permanent supply of timber for construction of new buildings, repairs and basic fortifications.</Cell><Cell>伐木工的工作是砍树和护林，保证新建设、修缮工作与修建防御设施有持久的木材供应。</Cell></Row>
+<Row><Cell>ui_nh_structure_desc_merchant1</Cell><Cell>Trade is always an essential element of life in towns as well as villages, allowing you to bring in the goods that are lacking, as well as selling the products your tradesmen create. </Cell><Cell>商业是城镇发展中重要的一个元素，村庄也不例外。它可以使你得到缺少的货物，也可以卖出你的生意人的发明创造。</Cell></Row>
+<Row><Cell>ui_nh_structure_desc_pub1</Cell><Cell>The tavern is always busy. After all, what could be better after a hard day's work than to take a breather with friends over a tankard of good ale?</Cell><Cell>酒馆总是繁忙不堪。不管怎么说，有什么事情比在一天的忙碌工作之后与朋友们干上一杯放松一下更爽快呢？</Cell></Row>
+<Row><Cell>ui_nh_structure_desc_stables1</Cell><Cell>Owning stables is a privilege enjoyed by very few. The head grooms manage them for their liege lords and have a great responsibility in handling their valuable mounts, for which they deserve recognition.</Cell><Cell>只有极少数人能有幸拥有一间马厩。管理马厩的马夫为他们的领主饲养调教上好的坐骑，他们因此也获得了重视与荣誉。</Cell></Row>
+<Row><Cell>ui_nh_structure_desc_townHall1</Cell><Cell>The tent will serve at the start instead of a real Rathaus. At least you'll have a place to lay your head before you get a proper Bailiff's residence built.</Cell><Cell>起初，市政厅又一个帐篷所替代。至少在建起一座像样的执政官办公楼之前，你能有地方睡觉。</Cell></Row>
+<Row><Cell>ui_nh_structure_desc_townHall2</Cell><Cell>Every sizeable village should have a Rathaus, the seat of law and order embodied by the Bailiff.</Cell><Cell>每个有一定规模的村庄都需要一个市政厅，它象征着执政官在此维护着法律与治安。</Cell></Row>
+<Row><Cell>ui_nh_structure_desc_townHall3</Cell><Cell>The extended Rathaus is much bigger than the original one, affording possibilities of further improvement into a comfortable Bailiff's residence.</Cell><Cell>扩建后的市政厅比原有的建筑更大，具备改建成更舒适的执政官办公楼的潜力。</Cell></Row>
+<Row><Cell>ui_nh_structure_name_apiary1</Cell><Cell>Beehives</Cell><Cell>蜂箱</Cell></Row>
+<Row><Cell>ui_nh_structure_name_baker1</Cell><Cell>Bakery</Cell><Cell>面包房</Cell></Row>
+<Row><Cell>ui_nh_structure_name_blacksmith1</Cell><Cell>Forge</Cell><Cell>锻造台</Cell></Row>
+<Row><Cell>ui_nh_structure_name_bridge1</Cell><Cell>Bridge and Road</Cell><Cell>桥梁与路</Cell></Row>
+<Row><Cell>ui_nh_structure_name_butcher1</Cell><Cell>Butcher's</Cell><Cell>屠夫</Cell></Row>
+<Row><Cell>ui_nh_structure_name_camp1</Cell><Cell>Labourers' Camp</Cell><Cell>工人营地</Cell></Row>
+<Row><Cell>ui_nh_structure_name_garrison1</Cell><Cell>Guardhouse</Cell><Cell>卫兵室</Cell></Row>
+<Row><Cell>ui_nh_structure_name_church1</Cell><Cell>Church Basic Repairs</Cell><Cell>教堂基础维修</Cell></Row>
+<Row><Cell>ui_nh_structure_name_church2</Cell><Cell>Church</Cell><Cell>教堂</Cell></Row>
+<Row><Cell>ui_nh_structure_name_lumberjacks1</Cell><Cell>Woodcutters' Camp</Cell><Cell>伐木营地</Cell></Row>
+<Row><Cell>ui_nh_structure_name_merchant1</Cell><Cell>Trader's </Cell><Cell>商人</Cell></Row>
+<Row><Cell>ui_nh_structure_name_pub1</Cell><Cell>Tavern</Cell><Cell>酒馆</Cell></Row>
+<Row><Cell>ui_nh_structure_name_stables1</Cell><Cell>Stables</Cell><Cell>马厩</Cell></Row>
+<Row><Cell>ui_nh_structure_name_townHall1</Cell><Cell>Temporary Rathaus</Cell><Cell>临时市政厅</Cell></Row>
+<Row><Cell>ui_nh_structure_name_townHall2</Cell><Cell>Rathaus</Cell><Cell>市政厅</Cell></Row>
+<Row><Cell>ui_nh_structure_name_townHall3</Cell><Cell>Extended Rathaus</Cell><Cell>扩展的市政厅</Cell></Row>
+</Table>
