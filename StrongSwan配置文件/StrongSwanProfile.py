@@ -1,9 +1,14 @@
 import os
-if not os.path.exists("./sswan"):
-    os.makedirs("./sswan")
 
-with open("servers.txt","r",encoding="utf-8") as f:
+root=os.path.dirname(os.path.abspath(__file__))
+folder_dir=os.path.join(root,"sswan")
+if not os.path.exists(folder_dir):
+    os.makedirs(folder_dir)
+
+with open(os.path.join(root,"new_servers.txt"),"r",encoding="utf-8") as f:
     a=f.readlines()
+# with open(os.path.join(root,"old_servers.txt"),"r",encoding="utf-8") as f:
+#     a=f.readlines()
 
 o=0
 for i in a:
@@ -72,6 +77,6 @@ for i in a:
         ]
     }
     """%(o,name,addr,id)
-    with open("./sswan/%s.sswan"%name,"w",encoding="utf-8") as f:
+    with open(os.path.join(folder_dir,"%s.sswan"%name),"w",encoding="utf-8") as f:
         f.write(text)
     o+=1
