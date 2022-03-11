@@ -47,7 +47,6 @@ DNS = 103.86.99.98, 103.86.96.98
 PublicKey = {public_key}
 AllowedIPs = 0.0.0.0/0
 Endpoint = {ip+".%s"%i}:51820
-PersistentKeepalive = 30
 """
 
         elif DEVICE=="Android":
@@ -61,7 +60,6 @@ IncludedApplications = com.google.android.apps.maps, com.google.android.syncadap
 PublicKey = {public_key}
 AllowedIPs = 0.0.0.0/0
 Endpoint = {ip+".%s"%i}:51820
-PersistentKeepalive = 30
 """
 
         with open(os.path.join(country_folder,"%s_%s.conf"%(name,i)),"w",encoding="utf-8") as f:
