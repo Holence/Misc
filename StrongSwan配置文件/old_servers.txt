@@ -7,6 +7,15 @@ United States #7625, 96.126.97.64, us5784.nordvpn.com
 United States #7626, 96.126.97.90, us5783.nordvpn.com
 United States #7627, 96.126.97.96, us5784.nordvpn.com
 
+United States #7630, 96.126.97.125, us5783.nordvpn.com
+United States #7632, 96.126.97.141, us5783.nordvpn.com
+United States #7634, 96.126.97.154, us5783.nordvpn.com
+United States #7635, 96.126.97.155, us5784.nordvpn.com
+United States #7636, 96.126.97.174, us5783.nordvpn.com
+United States #7637, 96.126.97.176, us5784.nordvpn.com
+United States #7638, 96.126.97.179, us5783.nordvpn.com
+United States #7639, 96.126.97.199, us5784.nordvpn.com
+
 Japan #2595, 172.105.200.145, jp558.nordvpn.com
 Japan #2596, 172.105.200.149, jp560.nordvpn.com
 Japan #2597, 172.105.200.160, jp598.nordvpn.com
