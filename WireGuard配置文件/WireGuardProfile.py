@@ -2,40 +2,67 @@ import os
 import shutil
 import random
 
-root=os.path.dirname(os.path.abspath(__file__))
-conf_folder=os.path.join(root,"conf")
-if os.path.exists(conf_folder):
-    shutil.rmtree(conf_folder)
-os.makedirs(conf_folder)
-
 PRIVATEKEY="PRIVATEKEY"
-MAX_SAMPLE=10
+MAX_SAMPLE=5
 
 # DEVICE="Android"
 DEVICE="PC"
 
+root=os.path.dirname(os.path.abspath(__file__))
+conf_folder=os.path.join(root,"conf_%s"%DEVICE)
+if os.path.exists(conf_folder):
+    shutil.rmtree(conf_folder)
+os.makedirs(conf_folder)
+
 treasure_list=[
-    # ("CountryName", "xxx.xxx.xxx", 1, 255, "PUBLICKEY")
+    ("COUNTRY_a",  "xxx.xxx.xxx",   1, 255,   8,   12,  "PUBLICKEY"),
+    ("COUNTRY_b",  "xxx.xxx.xxx",   1, 255,   0,    1,  "PUBLICKEY"),
+    ("COUNTRY_c",  "xxx.xxx.xxx",   [1,50,100,150,200], None, 8, None, "PUBLICKEY"),
 ]
 
+ip_full_file=open(os.path.join(root,"ip_full_list.txt"),"w")
+ip_sample_file=open(os.path.join(root,"ip_sample_list.txt"),"w")
 
-for server in treasure_list:
-    name=server[0]
-    ip=server[1]
-    start=server[2]
-    end=server[3]
-    public_key=server[4]
+for ip_range in treasure_list:
+    name=ip_range[0]
+    ip_prefix=ip_range[1]
+    start=ip_range[2]
+    end=ip_range[3]
+    step=ip_range[4]
+    skip=ip_range[5]
+    public_key=ip_range[6]
 
-    country_folder=os.path.join(conf_folder,name)
-    if not os.path.exists(country_folder):
-        os.makedirs(country_folder)
+    server_folder=os.path.join(conf_folder,name)
+    if not os.path.exists(server_folder):
+        os.makedirs(server_folder)
     
-    if end-start+1<MAX_SAMPLE:
-        sample=end-start+1
+    ip_list=[]
+    if type(start)==int:
+        while True:
+            o=start
+            for i in range(step+1):
+                ip=ip_prefix+".%s"%o
+                ip_list.append(ip)
+                ip_full_file.write(ip+"\n")
+                o+=1
+            start+=skip
+            if start>end:
+                break
+    elif type(start)==list:
+        for i in start:
+            o=i
+            for j in range(step+1):
+                ip=ip_prefix+".%s"%o
+                ip_list.append(ip)
+                ip_full_file.write(ip+"\n")
+                o+=1
+
+    if len(ip_list)<MAX_SAMPLE:
+        sample=len(ip_list)
     else:
         sample=MAX_SAMPLE
     
-    for i in random.sample(range(start,end+1),sample):
+    for i in random.sample(ip_list,sample):
 
         if DEVICE=="PC":
             conf=f"""[Interface]
@@ -46,7 +73,7 @@ DNS = 103.86.99.98, 103.86.96.98
 [Peer]
 PublicKey = {public_key}
 AllowedIPs = 0.0.0.0/0
-Endpoint = {ip+".%s"%i}:51820
+Endpoint = {i}:51820
 """
 
         elif DEVICE=="Android":
@@ -59,10 +86,13 @@ IncludedApplications = com.google.android.apps.maps, com.google.android.syncadap
 [Peer]
 PublicKey = {public_key}
 AllowedIPs = 0.0.0.0/0
-Endpoint = {ip+".%s"%i}:51820
+Endpoint = {i}:51820
 """
-
-        with open(os.path.join(country_folder,"%s_%s.conf"%(name,i)),"w",encoding="utf-8") as f:
+        ip_sample_file.write(i+"\n")
+        with open(os.path.join(server_folder,"%s_%s.conf"%(name,i.split(".")[-1])),"w",encoding="utf-8") as f:
             f.write(conf)
         
-        shutil.make_archive(os.path.join(conf_folder,name),"zip",country_folder)
+        shutil.make_archive(os.path.join(conf_folder,name),"zip",server_folder)
+
+ip_full_file.close()
+ip_sample_file.close()
