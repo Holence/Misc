@@ -1,4 +1,7 @@
-with open("ip_sample_list.txt","r") as f:
+file="ip_sample_list.txt"
+# file="ip_full_list.txt"
+
+with open(file,"r") as f:
     ip_list=[i.strip() for i in f.readlines()]
 
 from utils import ping

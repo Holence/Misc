@@ -48,6 +48,7 @@ for i in a:
             "com.instagram.android",
             "org.readera",
             "org.thunderdog.challegram",
+            "com.telegram.messenger",
             "com.gorillasoftware.everyproxy",
             "com.twitter.android",
             "com.redhome.sta",
