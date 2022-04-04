@@ -3,8 +3,6 @@ from pixivpy3 import *
 from utils import *
 
 def crawl_user_novels(user_id, output_folder):
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
     
     novels_info_dict_list=[]
     offset=0
@@ -22,12 +20,16 @@ def crawl_user_novels(user_id, output_folder):
     title=author+"の小説"
     user_description=user["comment"]
     
+    output_folder=os.path.join(output_folder,title)
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+    
     cover_link=user["profile_image_urls"]["medium"]
-    cover_file=os.path.join(output_folder,"%s.jpg"%author)
+    cover_file=os.path.join(output_folder,"cover.jpg")
     print("Fetching Novel Cover: %s"%cover_link)
     api.download(cover_link,name=cover_file)
 
-    book=MarkdownBook(title, author, user_description, cover_file)
+    book=MarkdownBook(title, author, user_description, "cover.jpg")
     novels_info_dict_list.reverse()
     for novel_info_dict in novels_info_dict_list:
         sleep(1)
@@ -38,8 +40,6 @@ def crawl_user_novels(user_id, output_folder):
     book.saveEPUB(output_folder)
 
 def crawl_novel_serie(series_id:int, output_folder):
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
     
     print("Fetching Novel Serie: %s"%series_id)
     json_result = api.novel_series(series_id=series_id)
@@ -47,12 +47,16 @@ def crawl_novel_serie(series_id:int, output_folder):
     serie_author=json_result["novel_series_detail"]["user"]["name"]
     serie_description=purify(json_result["novel_series_detail"]["caption"])
 
+    output_folder=os.path.join(output_folder,serie_name)
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+    
     cover_link=json_result["novel_series_first_novel"]["image_urls"]["large"]
-    cover_file=os.path.join(output_folder,"%s.jpg"%serie_name)
+    cover_file=os.path.join(output_folder,"cover.jpg")
     print("Fetching Novel Cover: %s"%cover_link)
     api.download(cover_link,name=cover_file)
 
-    book=MarkdownBook(serie_name, serie_author, serie_description, cover_file)
+    book=MarkdownBook(serie_name, serie_author, serie_description, "cover.jpg")
     
     novel_info_dict=json_result["novel_series_first_novel"]
     while novel_info_dict!={}:
@@ -68,7 +72,7 @@ if __name__=="__main__":
 
     root=os.path.dirname(os.path.abspath(__file__))
     os.chdir(root)
-    
+
     output_folder=os.path.join(root,"output")
 
     print("Logging")

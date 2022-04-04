@@ -60,6 +60,7 @@ cover-image: {cover_dir}
         out_file=os.path.join(root,self.name+".epub")
         cmd="start powershell "
         cmd+="chcp 65001;"
-        cmd+="pandoc -i \"%s\" -o \"%s\" -s -c default.css;"%(file, out_file)
+        cmd+="cd %s;"%root
+        cmd+="pandoc -i \"%s\" -o \"%s\" -s -c %s;"%(file, out_file, os.path.join(os.getcwd(),"default.css"))
         # cmd+="pause;"
         os.system(cmd)
