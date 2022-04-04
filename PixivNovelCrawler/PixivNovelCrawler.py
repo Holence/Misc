@@ -67,6 +67,8 @@ def crawl_novel_serie(series_id:int, output_folder):
 if __name__=="__main__":
 
     root=os.path.dirname(os.path.abspath(__file__))
+    os.chdir(root)
+    
     output_folder=os.path.join(root,"output")
 
     print("Logging")

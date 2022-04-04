@@ -9,7 +9,7 @@ def purify(s:str):
     return s
 
 def getNovel(api,novel_info_dict):
-    novel_id, novel_title, novel_description = novel_info_dict["id"], novel_info_dict["title"], novel_info_dict["caption"].replace("<br />","\n\n")
+    novel_id, novel_title, novel_description = novel_info_dict["id"], novel_info_dict["title"].strip(), purify(novel_info_dict["caption"].replace("<br />","\n\n"))
     res=api.novel_text(novel_id)
     novel_text=purify(res["novel_text"])
     next_novel_info_dict=res["series_next"]
@@ -60,6 +60,6 @@ cover-image: {cover_dir}
         out_file=os.path.join(root,self.name+".epub")
         cmd="start powershell "
         cmd+="chcp 65001;"
-        cmd+="pandoc -i \"%s\" -o \"%s\" -s --toc -c default.css;"%(file, out_file)
+        cmd+="pandoc -i \"%s\" -o \"%s\" -s -c default.css;"%(file, out_file)
         # cmd+="pause;"
         os.system(cmd)
