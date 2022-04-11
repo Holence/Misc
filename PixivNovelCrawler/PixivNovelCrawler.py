@@ -45,7 +45,7 @@ def crawl_novel_serie(series_id:int, output_folder):
     json_result = api.novel_series(series_id=series_id)
     serie_name=json_result["novel_series_detail"]["title"]
     serie_author=json_result["novel_series_detail"]["user"]["name"]
-    serie_description=purify(json_result["novel_series_detail"]["caption"])
+    serie_description=json_result["novel_series_detail"]["caption"]
 
     output_folder=os.path.join(output_folder,serie_name)
     if not os.path.exists(output_folder):
@@ -58,15 +58,30 @@ def crawl_novel_serie(series_id:int, output_folder):
 
     book=MarkdownBook(serie_name, serie_author, serie_description, "cover.jpg")
     
-    novel_info_dict=json_result["novel_series_first_novel"]
-    while novel_info_dict!={}:
+    next_novel_info_dict=json_result["novel_series_first_novel"]
+    while next_novel_info_dict!={}:
         sleep(1)
-        novel_id, novel_title, novel_description, novel_text, novel_info_dict = getNovel(api, novel_info_dict)
+        novel_id, novel_title, novel_description, novel_text, next_novel_info_dict = getNovel(api, next_novel_info_dict)
         print("Fetched Text %s"%novel_id)
         book.appendChapter(novel_title, novel_description, novel_text)
     
     book.saveEPUB(output_folder)
 
+def crawl_novels(things, output_folder):
+    novel_id_list, book_name, book_author, book_description = things
+
+    output_folder=os.path.join(output_folder,book_name)
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+    
+    book=MarkdownBook(book_name, book_author, book_description, os.path.join(os.getcwd(),"cover.jpg"))
+
+    for novel_id in novel_id_list:
+        novel_id, novel_title, novel_description, novel_text, _ =getNovel(api, api.novel_detail(novel_id)["novel"])
+        print("Fetched Text %s"%novel_id)
+        book.appendChapter(novel_title, novel_description, novel_text)
+    
+    book.saveEPUB(output_folder)
 
 if __name__=="__main__":
 
@@ -82,7 +97,7 @@ if __name__=="__main__":
 
     # 爬取小说系列
     serie_list=[
-        # "123456"
+        # 123456
     ]
     for i in serie_list:
         sleep(1)
@@ -90,8 +105,16 @@ if __name__=="__main__":
     
     # 爬取用户全部小说
     user_list=[
-        # "123456"
+        # 123456
     ]
     for i in user_list:
         sleep(1)
         crawl_user_novels(i, output_folder)
+    
+    # 爬取指定小说
+    novels_list=[
+        ( [123456,123457,123458 ], "Book", "Author", "Description" )
+    ]
+    for i in novels_list:
+        sleep(1)
+        crawl_novels(i, output_folder)
