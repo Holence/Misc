@@ -1,7 +1,7 @@
 import os
 
 root=os.path.dirname(os.path.abspath(__file__))
-folder_dir=os.path.join(root,"sswan")
+folder_dir=os.path.join(root,"sswan\\Sock")
 if not os.path.exists(folder_dir):
     os.makedirs(folder_dir)
 

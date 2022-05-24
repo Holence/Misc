@@ -34,9 +34,13 @@ for epub_file in epub_list:
             continue
         
         ext=img_oldname.split(".")[-1]
-        os.rename(os.path.join(img_folder,img_oldname),os.path.join(img_folder,"%04d.%s"%(num,ext)))
+        img_newname="%04d.%s"%(num,ext)
+        os.rename(os.path.join(img_folder,img_oldname),os.path.join(img_folder,img_newname))
+        print("%s Renamed to %s"%(img_oldname,img_newname))
         num+=1
     
+    input("After preprocess is done, press Enter...")
+
     book_name=epub_file.split(".")[0]
     cbz_file=os.path.join(root,book_name)
     shutil.make_archive(cbz_file,"zip",img_folder)
